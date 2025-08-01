@@ -36,14 +36,14 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center space-x-2 mb-6">
-              <div className="bg-primary text-white p-2 rounded-lg">
-                <div className="w-8 h-8 flex items-center justify-center font-bold text-lg">
-                  GC
-                </div>
-              </div>
-              <span className="text-xl font-bold">Grupo Cangaia</span>
+              <img
+                src="/imagens/logo-branca.png"
+                alt="Logo Cangaia"
+                className="h-10 w-auto"
+              />
+              <span className="text-xl font-bold text-white">Cangaia</span>
             </Link>
-            
+
             <p className="text-gray-300 leading-relaxed mb-6">
               Mais de 20 anos de excelência no agronegócio paraense, 
               unindo tradição familiar, tecnologia avançada e sustentabilidade.
@@ -57,7 +57,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 bg-gray-800 rounded-lg hover:bg-primary transition-colors"
+                  className="p-2 bg-white/10 rounded-lg hover:bg-primary transition-colors text-white"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -106,7 +106,7 @@ const Footer = () => {
             <div className="space-y-4">
               {contactInfo.map((contact, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="text-primary mt-0.5">
+                  <div className="text-white mt-0.5">
                     {contact.icon}
                   </div>
                   <span className="text-gray-300 text-sm">{contact.text}</span>
@@ -120,7 +120,7 @@ const Footer = () => {
         <div className="py-6 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Grupo Cangaia - Todos os direitos reservados
+              © {new Date().getFullYear()} Cangaia - Todos os direitos reservados
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="#" className="text-gray-400 hover:text-primary text-sm transition-colors">
